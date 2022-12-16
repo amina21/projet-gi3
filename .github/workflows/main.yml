@@ -7,6 +7,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: 🏗 Setup repo
+        run: cd my-react-app 
+
+      - name: 🏗 Setup repo
         uses: actions/checkout@v2
 
       - name: 🏗 Setup Node
