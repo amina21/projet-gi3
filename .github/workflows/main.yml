@@ -4,14 +4,15 @@ on:
       - main
 jobs:
   publish:
+    defaults:
+      run:
+        working-directory: 'my-react-app'
     runs-on: ubuntu-latest
     steps:
 
       - name: 🏗 Setup repo
         uses: actions/checkout@v2
-
-      - name: 🏗 Setup repo
-        run: cd my-react-app        
+      
 
       - name: 🏗 Setup Node
         uses: actions/setup-node@v2
@@ -27,10 +28,10 @@ jobs:
 
 
       - name: 📦 Install dependencies
-        run: cd my-react-app && yarn install
+        run: yarn install
 
       - name: 📦 Install dependencies
-        run: cd my-react-app && yarn run build-packages       
+        run:  yarn run build-packages       
 
       - name: 🚀 Publish app
-        run: cd my-react-app && expo publish --non-interactive
+        run:  expo publish --non-interactive
