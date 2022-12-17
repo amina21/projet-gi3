@@ -33,7 +33,10 @@ jobs:
         run: yarn install
 
       - name: 📦 Install dependencies
-        run:  yarn run build-packages       
+        run:  yarn run build-packages    
+
+      - name: 📦 Install dependencies
+        run:  npx expo install expo-updates
 
       - name: 🚀 Publish app
         run:  expo publish --non-interactive
