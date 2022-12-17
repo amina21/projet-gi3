@@ -6,11 +6,12 @@ jobs:
   publish:
     runs-on: ubuntu-latest
     steps:
-      - name: 🏗 Setup repo
-        run: cd my-react-app
 
       - name: 🏗 Setup repo
         uses: actions/checkout@v2
+
+      - name: 🏗 Setup repo
+        run: cd my-react-app        
 
       - name: 🏗 Setup Node
         uses: actions/setup-node@v2
