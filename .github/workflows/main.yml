@@ -36,7 +36,7 @@ jobs:
         run:  yarn run build-packages    
 
       - name: 📦 Install dependencies
-        run:  npx expo install expo-updates
+        run:  cd apps/mobie && npx expo install expo-updates
 
       - name: 🚀 Publish app
-        run:  expo publish --non-interactive
+        run:  cd apps/mobie &&  expo publish --non-interactive
