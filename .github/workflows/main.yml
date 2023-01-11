@@ -37,6 +37,9 @@ jobs:
       
       - name: 📦 ls 
         run:  ls -la   
+        
+      - name: 📦 ls APPS
+        run:  ls -la   apps/  
 
       - name: 📦 Install dependencies
         run:  cd apps/mobie && npx expo install expo-updates
