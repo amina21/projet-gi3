@@ -34,6 +34,9 @@ jobs:
 
       - name: 📦 Install dependencies
         run:  yarn run build-packages    
+      
+      - name: 📦 ls 
+        run:  ls -la   
 
       - name: 📦 Install dependencies
         run:  cd apps/mobie && npx expo install expo-updates
