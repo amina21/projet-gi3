@@ -26,7 +26,7 @@ jobs:
         uses: expo/expo-github-action@v7
         with:
           expo-version: latest
-          token: TEAM0
+          token: ut8AJWp88BQ4uk2xUnRB8TBQDlRw0EZMdtC9QhGE
 
 
       - name: 📦 Install dependencies
