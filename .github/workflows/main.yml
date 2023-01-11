@@ -42,7 +42,7 @@ jobs:
         run:  ls -la   apps/  
 
       - name: 📦 Install dependencies
-        run:  cd apps/mobie && npx expo install expo-updates
+        run:  cd apps/mobile && npx expo install expo-updates
 
       - name: 🚀 Publish app
-        run:  cd apps/mobie &&  expo publish --non-interactive
+        run:  cd apps/mobile &&  expo publish --non-interactive
